@@ -1,0 +1,25 @@
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    # ~/.tmux.conf: tmux.conf
+    # ~/.vim: vim/
+    # ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig_local: gitconfig_local
+    ~/.gitmessage: gitmessage
+    ~/.gitignore_global: gitignore_global
+    ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/plugins: oh-my-zsh/custom/plugins/
+    ~/.continuum/license_academic_20150921123330.txt: continuum/license_academic_20150921123330.txt
+
+- shell:
+  - [ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", Installing homebrew]
+  - [brew install git, Installing Git]
+  - [brew install zsh, Installing Zsh]
+  - [brew install python, installing Python 2.7]
+  - [brew install youtube-dl, Installing youtube-dl]
+  - [brew install cheat, Installing cheat]
+  - [sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)", Installing oh-my-zsh]
+  - [git submodule update --init --recursive, Installing submodules]

@@ -1,0 +1,13 @@
+{
+  "_license_version": "1.1",
+  "company": "UFPA",
+  "email": "iraquitan.filho@icen.ufpa.br",
+  "end_date": "2016-09-20",
+  "issued": "2015-09-21",
+  "name": "Iraquitan Cordeiro Filho",
+  "packages": "numbapro mkl iopro",
+  "product": "Academic",
+  "qty": "1",
+  "sig": "1467e6a777fa080de9b69a7ae423dec0b2474f164e8ee3f02a70c839627d15f254040c6f542f1615d55389a9928af003616c634972eff7b8f1c0c6f70d76cad5",
+  "vendor": "continuum"
+}
