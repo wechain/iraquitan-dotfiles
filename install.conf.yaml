@@ -11,6 +11,9 @@
     ~/.zshrc:
       force: true
       path: zshrc
+    ~/.zshrc_local_after:
+      force: create
+      path: zshrc_local_after
     ~/.gitconfig:
       force: true
       path: gitconfig
