@@ -1,2 +1,6 @@
 # Initialize completion
 autoload -U compinit && compinit
+
+# VIM as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
