@@ -2,7 +2,7 @@
 
 # Check if Homebrew is installed
 which -s brew
-if [[ $? != 0 ]] ; then
+if [[ $? != 0 ]]; then
   echo 'Installing homebrew'
   # Install Homebrew
   # https://github.com/mxcl/homebrew/wiki/installation
@@ -39,4 +39,9 @@ else
 fi
 
 # Change default shell
-chsh -s /bin/zsh
+if [! $0 = "-zsh"]; then
+  echo 'Changing default shell to zsh'
+  chsh -s /bin/zsh
+else
+  echo 'Already using zsh'
+fi

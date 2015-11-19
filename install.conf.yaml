@@ -1,35 +1,37 @@
 - clean: ['~']
 
 - shell:
-  - [sh pre-install.zsh, Running pre installation script]
+  - [sh pre-install.sh, Running pre installation script]
 
 - link:
     ~/.dotfiles: ''
     # ~/.tmux.conf: tmux.conf
     # ~/.vim: vim/
     # ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/.gitconfig: gitconfig
-    ~/.gitconfig_local: gitconfig_local
-    ~/.gitmessage: gitmessage
-    ~/.gitignore_global: gitignore_global
-    ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
-    ~/.oh-my-zsh/custom/plugins: oh-my-zsh/custom/plugins/
-    # ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
-    # ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
-    # ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
-    # ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.gitconfig:
+      force: true
+      path: gitconfig
+    ~/.gitconfig_local:
+      force: true
+      path: gitconfig_local
+    ~/.gitmessage:
+      force: true
+      path: gitmessage
+    ~/.gitignore_global:
+      force: true
+      path: gitignore_global
+    ~/.oh-my-zsh/custom/my-aliases.zsh:
+      force: true
+      path: oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/plugins:
+      force: true
+      path: oh-my-zsh/custom/plugins/
     ~/.continuum/license_academic_20150921123330.txt:
-      create: true
+      force: true
       path: continuum/license_academic_20150921123330.txt
 
 - shell:
-  # - ['ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"', Installing homebrew]
-  # - [brew install git, Installing Git]
-  # - [brew install zsh, Installing Zsh]
-  # - [brew install python, installing Python 2.7]
-  # - [brew install youtube-dl, Installing youtube-dl]
-  # - [brew install cheat, Installing cheat]
-  # - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
-  - [autoload -U compinit && compinit, Initializing completion]
   - [git submodule update --init --recursive, Installing submodules]

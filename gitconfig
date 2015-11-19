@@ -1,3 +1,6 @@
+[alias]
+        pullff = pull --ff-only
+
 [color]
         ui = auto
 

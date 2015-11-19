@@ -110,3 +110,8 @@ function nonascii() {
 
 # Mirror a website
 alias mirrorsite='wget -m -k -K -E -e robots=off'
+
+# Check octal mod of dir or file
+function octmod() {
+	stat -f %Mp%Lp ${1}
+}
