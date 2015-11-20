@@ -47,7 +47,6 @@
 
 - shell:
   -
-    # command: in $HOME/.base16-builder ./base16 -t terminal-app
     command: $HOME/.base16-builder/base16 -t terminal-app
     description: Building all base16 terminal app color
     stdin: true
@@ -58,5 +57,4 @@
     description: Installing Vundle plugins
     stdin: true
     stdout: true
-  # - [vim +PluginInstall +qall, Installing vim plugins with Vundle]
   - [git submodule update --init --recursive, Installing submodules]
