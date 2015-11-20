@@ -53,6 +53,9 @@ filetype plugin indent on    " required
 " F4 display TagList
 nmap <silent> <F4> :TagbarToggle<CR>
 
+" Backspace works on previously sessions
+:set backspace=2
+
 """""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""
 " Color theme setup
 set number
