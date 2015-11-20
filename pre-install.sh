@@ -16,6 +16,8 @@ fi
 # which -s git || brew install git
 brew install git
 
+brew install vim
+
 # Check if Zsh is installed
 which -s zsh || brew install zsh
 
@@ -27,6 +29,9 @@ which -s cheat || brew install cheat
 
 # Install python
 brew install python
+
+# Install tmux
+brew install tmux
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"

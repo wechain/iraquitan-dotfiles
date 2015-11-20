@@ -5,9 +5,18 @@
 
 - link:
     ~/.dotfiles: ''
-    # ~/.tmux.conf: tmux.conf
-    # ~/.vim: vim/
-    # ~/.vimrc: vimrc
+    ~/.base16-builder:
+      force: true
+      path: base16-builder/
+    ~/.tmux.conf:
+      force: true
+      path: tmux.conf
+    ~/.vim:
+      force: true
+      path: vim/
+    ~/.vimrc:
+      force: true
+      path: vimrc
     ~/.zshrc:
       force: true
       path: zshrc
@@ -37,4 +46,17 @@
       path: continuum/license_academic_20150921123330.txt
 
 - shell:
+  -
+    # command: in $HOME/.base16-builder ./base16 -t terminal-app
+    command: $HOME/.base16-builder/base16 -t terminal-app
+    description: Building all base16 terminal app color
+    stdin: true
+    stdout: true
+    stderr: true
+  -
+    command: vim +PluginInstall +qall
+    description: Installing Vundle plugins
+    stdin: true
+    stdout: true
+  # - [vim +PluginInstall +qall, Installing vim plugins with Vundle]
   - [git submodule update --init --recursive, Installing submodules]
