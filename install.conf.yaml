@@ -38,9 +38,18 @@
     ~/.oh-my-zsh/custom/my-aliases.zsh:
       force: true
       path: oh-my-zsh/custom/my-aliases.zsh
-    ~/.oh-my-zsh/custom/plugins:
+    ~/.oh-my-zsh/custom/plugins/brew:
       force: true
-      path: oh-my-zsh/custom/plugins/
+      path: oh-my-zsh/custom/plugins/brew/
+    ~/.oh-my-zsh/custom/plugins/youtube-dl:
+      force: true
+      path: oh-my-zsh/custom/plugins/youtube-dl/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions:
+      force: true
+      path: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting:
+      force: true
+      path: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.continuum/license_academic_20150921123330.txt:
       force: true
       path: continuum/license_academic_20150921123330.txt
