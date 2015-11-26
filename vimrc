@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 
-" Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdcommenter'
@@ -49,20 +48,112 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"""""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
-" F4 display TagList
-nmap <silent> <F4> :TagbarToggle<CR>
 
-" Backspace works on previously sessions
-:set backspace=2
-
-"""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""
-" Color theme setup
+"""""""""""""""""""""""""BASE CONFIG""""""""""""""""""""
+" color theme setup
 set number
 syntax enable
 set background=dark
 colorscheme base16-ocean
 
+" backspace available
+set backspace=2
+
+" backspace once to delete
+set smarttab
+
+" indentation
+set autoindent
+set smartindent
+
+" allows the use of a mouse
+set mouse=a
+
+" automatically delete trailing spaces or Tab when saves file
+autocmd BufWritePre * :%s/\s\+$//e
+
+" filling TAB
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set shiftround
+
+" code folding indentation beneath the cursor is in the folded or unfolded
+" with za command
+set fdm=indent
+" default expansion
+set foldlevel=99
+
+
+" when you open a file always jumps to the last cursor position
+autocmd BufReadPost *
+      \ if ! exists("g:leave_my_cursor_position_alone") |
+      \     if line("'\"") > 0 && line ("'\"") <= line("$") |
+      \         exe "normal g'\"" |
+      \     endif |
+      \ endif
+
+
+"""""""""""""""""""""""""KEY MAPPING""""""""""""""""""""
+" NORMAL mode Ctrl + a select all and copy it to the clipboard
+nmap <C-c> gg"+yG
+
+" VISUAL mode Ctrl + c to copy selected text to the clipboard
+vmap <C-c> "+y
+
+" Ctrl + v to paste equal
+inoremap <C-v> <ESC>"+pa
+
+" write to read-only files w!!
+cmap w!! w !sudo tee >/dev/null %
+
+" <F2> Switch line numbers
+nnoremap <F2> :set nonu!<CR>:set foldcolumn=0<CR>
+
+" <F3> Open the directory tree
+nmap <silent> <F3> :NERDTreeToggle<CR>
+
+" <F4> display TagList
+nmap <silent> <F4> :TagbarToggle<CR>
+
+" <F5> to run the script
+if exists("$VIRTUAL_ENV")
+	autocmd FileType python map <buffer> <F5> :!$VIRTUAL_ENV'/bin/python' %<CR>
+else
+	autocmd FileType python map <buffer> <F5> :!python %<CR>
+endif
+
+" <F6> new tab
+map <F6> <Esc>:tabnew<CR>
+
+" <F7> Copy and paste with indent
+set pastetoggle=<F7>
+
+" <F8> sort import and auto pep8
+autocmd FileType python map <buffer> <F8> :!yapf -i % --style=google;isort %;<CR><CR>
+
+" add word to current quote
+nnoremap w" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap w' viw<esc>a'<esc>hbi'<esc>lel
+
+" in the Normal Mode and Visual / Select Mode, use the Tab key and the
+" Shift-Tab key to indent text
+nnoremap > >>
+nnoremap < <<
+vnoremap > >gv
+vnoremap < <gv
+
+" quicker window switching
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" emoji
+imap <C-e> <C-X><C-U>
+
+
+"""""""""""""""""""""""""PLUGIN CONFIG""""""""""""""""""""
 " Syntastic setup
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -85,14 +176,11 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 " CtrlP
 let g:ctrlp_show_hidden = 1
 
-" <F8> sort import and auto pep8
-autocmd FileType python map <buffer> <F8> :!yapf -i % --style=google;isort %;<CR><CR>
-
 " Jedi-vim setup
 autocmd FileType python setlocal completeopt-=preview
 let g:jedi#completions_command = "<C-Space>"
 
-" flake8
+" Flake8
 let g:flake8_show_in_file = 1
 let g:flake8_show_in_gutter = 1
 autocmd! BufRead,BufWritePost *.py call Flake8()

@@ -33,6 +33,9 @@ brew install python
 # Install tmux
 brew install tmux
 
+# Install exuberant Ctags
+brew install ctags
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
