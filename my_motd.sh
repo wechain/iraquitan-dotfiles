@@ -13,13 +13,12 @@
 # size=$(sysctl hw.memsize | grep memsize | grep -o '[0-9]\{1,\}')
 # echo -e "                                                  \033[1;31mRAM:\033[0m \033[33m$((size / 1024 / 1024 / 1024)) GB"
 # echo -e "                                                  \033[1;31mIP:\033[0m \033[33m$(ipconfig getifaddr en0)\033[0m"
-
 echo -e "               ████ ███            \033[1;31mOS:\033[0m \033[33m$(sw_vers -productName)\033[0m"
 echo -e "              ██\033[32m▒▒▒\033[0m█\033[32m▒▒▒\033[0m█           \033[1;31m  Kernel:\033[0m \033[33m$(sw_vers -productVersion)\033[0m\t\033[1;31mBuild:\033[0m \033[33m$(sw_vers -buildVersion)\033[0m"
 echo -e "             ██\033[32m▒\033[0m        █          \033[1;31m  Architecture:\033[0m \033[33m$(uname -m)\033[0m"
-echo -e "         ██████  \033[34m██\033[0m \033[34m██\033[0m  █          \033[1;31mDisk size:\033[0m \033[33m$(df -H | grep disk1 | grep -o '[0-9]\{3\}G' | head -n 1)\033[0m"
-echo -e "        ██████   \033[34m██\033[0m \033[34m██\033[0m  █          \033[1;31m  Disk used:\033[0m \033[33m$(df -H | grep disk1 | grep -o '[0-9]\{3\}G' | head -n 2 | tail -n 1)\033[0m"
-echo -e "        ██\033[32m▒▒▒\033[0m█          ███        \033[1;31m  Disk available:\033[0m \033[33m$(df -H | grep disk1 | grep -o '[0-9]\{3\}G' | tail -n 1)\033[0m"
+echo -e "         ██████  \033[34m██\033[0m \033[34m██\033[0m  █          \033[1;31mDisk size:\033[0m \033[33m$(df -H | grep 'disk1' | grep -o '[0-9]\{1,\}\.\{0,\}[0-9]\{1,\}[GT]' | head -n 1)\033[0m"
+echo -e "        ██████   \033[34m██\033[0m \033[34m██\033[0m  █          \033[1;31m  Disk used:\033[0m \033[33m$(df -H | grep 'disk1' | grep -o '[0-9]\{1,\}\.\{0,\}[0-9]\{1,\}[GT]' | head -n 2 | tail -n 1)\033[0m"
+echo -e "        ██\033[32m▒▒▒\033[0m█          ███        \033[1;31m  Disk available:\033[0m \033[33m$(df -H | grep 'disk1' | grep -o '[0-9]\{1,\}\.\{0,\}[0-9]\{1,\}[GT]' | tail -n 1)\033[0m"
 echo -e "        ██\033[32m▒▒▒▒▒▒   ▒  \033[0m██████       \033[1;31mProcessor:\033[0m \033[33m$(sysctl -n machdep.cpu.brand_string)\033[0m"
 echo -e "       ██\033[32m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\033[0m███     \033[1;31m  #CPUs:\033[0m \033[33m$(/usr/sbin/system_profiler SPHardwareDataType | grep 'Number of Processors' | grep -o '[0-9]')\033[0m\t\033[1;31m#COREs/CPU: \033[33m$(sysctl -n machdep.cpu.core_count)\033[0m"
 echo -e "      ██\033[32m▒▒▒▒     ▒▒▒▒▒▒▒▒▒▒▒▒\033[0m█     \033[1;31mRAM:\033[0m \033[33m$(hostinfo | grep memory | grep -o '[0-9]\{2\}.[0-9]\{2\}') GB\033[0m"
