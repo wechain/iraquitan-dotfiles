@@ -5,4 +5,4 @@ autoload -U compinit && compinit
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-bash /etc/motd.sh
+bash $HOME/.motd
