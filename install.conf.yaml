@@ -53,6 +53,9 @@
     ~/.continuum/license_academic_20150921123330.txt:
       force: true
       path: continuum/license_academic_20150921123330.txt
+    ~/.motd:
+      force: true
+      path: my_motd.sh
 
 - shell:
   -
