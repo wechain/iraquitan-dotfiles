@@ -53,7 +53,7 @@ alias dockscroll_on='defaults write com.apple.dock scroll-to-open -bool TRUE; ki
 alias dockscroll_off='defaults write com.apple.dock scroll-to-open -bool FALSE; killall Dock'
 
 # Terminal Proxy
-alias terminal_proxy='export http_proxy=http://webcache.itv.loca:8080/
+alias terminal_proxy='export http_proxy=http://webcache.itv.local:8080/
 export HTTPS_PROXY=http://webcache.itv.local:8080/'
 
 # Alias for Git Custom
