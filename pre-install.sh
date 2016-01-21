@@ -36,6 +36,12 @@ brew install tmux
 # Install exuberant Ctags
 brew install ctags
 
+# Install Otto by HashiCorp
+brew install otto
+
+# Install Vault by HashiCorp
+brew install vault
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
