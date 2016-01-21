@@ -120,3 +120,4 @@ function octmod() {
 function cpmkdir() {
     test -d "${2}" || mkdir -p "${2}" && cp ${1} "${2}"
 }
+
