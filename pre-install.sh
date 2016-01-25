@@ -16,6 +16,10 @@ fi
 # which -s git || brew install git
 brew install git
 
+# Install git-secrets
+brew install git-secrets
+
+# Install homebrew vim
 brew install vim
 
 # Check if Zsh is installed
