@@ -121,3 +121,5 @@ function cpmkdir() {
     test -d "${2}" || mkdir -p "${2}" && cp ${1} "${2}"
 }
 
+# Count coffe
+alias coffee='VALUE=$( cat ~/.cupsocoffee ) ; VALUE=$(( $VALUE + 1 )); echo $VALUE > ~/.cupsocoffee ; echo $VALUE'
