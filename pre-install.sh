@@ -49,6 +49,9 @@ brew install vault
 # Install tree
 brew install tree
 
+# Install Keybase
+brew install keybase
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
