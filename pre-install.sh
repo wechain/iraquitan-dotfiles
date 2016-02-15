@@ -55,6 +55,9 @@ brew install keybase
 # Intall GnuPGP
 brew install gpg2
 
+# Install Watson for time tracking on projects
+brew install watson
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
