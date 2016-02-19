@@ -61,6 +61,9 @@ brew install watson
 # Install Googler terminal search
 brew install googler
 
+# Install cliclick
+brew install cliclick
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
