@@ -58,6 +58,9 @@ brew install gpg2
 # Install Watson for time tracking on projects
 brew install watson
 
+# Install Googler terminal search
+brew install googler
+
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZDIR" ]; then
