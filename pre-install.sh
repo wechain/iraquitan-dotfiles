@@ -12,6 +12,7 @@ else
   brew update
 fi
 
+###### BREW INSTALLS ######
 # Check if Git is installed
 # which -s git || brew install git
 brew install git
@@ -33,6 +34,9 @@ which -s cheat || brew install cheat
 
 # Install python
 brew install python
+
+# Install Node Js
+brew install node
 
 # Install tmux
 brew install tmux
@@ -63,6 +67,19 @@ brew install googler
 
 # Install cliclick
 brew install cliclick
+
+###### NODE INSTALLS ######
+# Install Yeoman
+npm install -g yo
+
+# Install Bower
+npm install -g bower
+
+# Install GRUNT
+npm install -g grunt-cli
+
+# Install Bootstrap
+npm install bootstrap
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
