@@ -78,6 +78,9 @@ npm install -g bower
 # Install GRUNT
 npm install -g grunt-cli
 
+# Install AngularJs
+npm install angular
+
 # Install Bootstrap
 npm install bootstrap
 
