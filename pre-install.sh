@@ -35,6 +35,9 @@ which -s cheat || brew install cheat
 # Install python
 brew install python
 
+# Install Google App Engine Python SDK
+brew install app-engine-python
+
 # Install Node Js
 brew install node
 
