@@ -38,6 +38,9 @@ brew install python
 # Install Google App Engine Python SDK
 brew install app-engine-python
 
+# Install Heroku
+brew install heroku-toolbelt
+
 # Install Node Js
 brew install node
 
