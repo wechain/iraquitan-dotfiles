@@ -7,6 +7,7 @@ My custom dotfiles using oh-my-zsh and dotbot
 * [What you get](#what-you-get)
 * [Quick start](#quick-start)
 * [Creator](#creator)
+* [License](#license)
 
 ## Requirements
 * Preferred latest OSX
@@ -32,3 +33,6 @@ My custom dotfiles using oh-my-zsh and dotbot
 
 * Twitter: <https://twitter.com/iraquitan_filho>
 * Github: <https://github.com/iraquitan>
+
+## License
+The contents of this repository are covered under the [MIT License](LICENSE).
