@@ -45,30 +45,35 @@ export WORKON_HOME=~/PyEnvs
 # Add VirtualEnvWrapper to path
 # source /usr/local/bin/virtualenvwrapper.sh
 
-# Open PopcornTime Temp folder
-alias popcorn_temp='open $TMPDIR/Popcorn-Time'
-
 # Dock scroll gestures
 alias dockscroll_on='defaults write com.apple.dock scroll-to-open -bool TRUE; killall Dock'
 alias dockscroll_off='defaults write com.apple.dock scroll-to-open -bool FALSE; killall Dock'
 
 # Terminal Proxy
-alias terminal_proxy='export http_proxy=http://webcache.itv.local:8080/
-export HTTPS_PROXY=http://webcache.itv.local:8080/
-export HTTP_PROXY=http://webcache.itv.local:8080/'
+function terminal_proxy() {
+	export http_proxy=${1}
+	export HTTPS_PROXY=${1}
+	export HTTP_PROXY=${1}
+}
 
-alias u_terminal_proxy='unset http_proxy
-unset HTTPS_PROXY
-unset HTTP_PROXY'
+function unset_terminal_proxy() {
+	unset http_proxy
+	unset HTTPS_PROXY
+	unset HTTP_PROXY
+}
 
 # Alias for Git Custom
-alias gsproxxy='git config --global http.proxy http://webcache.itv.local:8080
-git config --global https.proxy http://webcache.itv.local:8080'
-alias guproxxy='git config --global --unset http.proxy
-git config --global --unset https.proxy'
+function git_setproxy() {
+	git config --global http.proxy ${1}
+	git config --global https.proxy ${1}
+}
+function git_unsetproxy() {
+	git config --global --unset http.proxy
+	git config --global --unset https.proxy
+}
 
 # Anaconda python
-alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
+# alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
 
 # Check what process is listening on port
 function whos_listening () {
@@ -76,10 +81,6 @@ function whos_listening () {
 }
 
 alias vagrant_shutdown_all='vagrant global-status | grep virtualbox | cut -c 1-9 | while read line; do echo $line; vagrant halt $line; done;'
-
-# Adjust terminal window
-#printf '\e[3;0;950t'  # Move to bottom left
-#printf '\e[8;24;400t' # Maximize horizontally
 
 alias gitignored='git ls-files --other --ignored --exclude-standard'
 
