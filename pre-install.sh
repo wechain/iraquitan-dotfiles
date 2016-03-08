@@ -11,27 +11,7 @@ else
   echo 'Updating homebrew'
   brew update
 fi
-
-###### BREW INSTALLS ######
-brew install git  # Install Git
-brew install git-secrets  # Install git-secrets
-brew install vim  # Install Vim
-brew install zsh  # Install Zsh
-brew install youtube-dl  # InstallYoutube-dl
-brew install cheat  # Install Cheat
-brew install python  # Install Python
-brew install python3  # Install Python3
-brew install app-engine-python  # Install Google App Engine Python SDK
-brew install heroku-toolbelt  # Install Heroku
-brew install node  # Install Node Js
-brew install tmux  # Install tmux
-brew install ctags  # Install exuberant Ctags
-brew install otto  # Install Otto by HashiCorp
-brew install vault  # Install Vault by HashiCorp
-brew install tree  # Install tree
-brew install keybase  # Install Keybase
-brew install gpg2  # Intall GnuPGP
-brew install ruby  # Install Ruby
+brew tap homebrew/bundle
 
 ###### RUBY INSTALLS ######
 gem install jekyll  # Install Jekyll
