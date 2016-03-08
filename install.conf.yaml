@@ -1,60 +1,32 @@
-- clean: ['~']
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.oh-my-zsh/custom/', '.oh-my-zsh/custom/plugins/']
 
 - shell:
   - [sh pre-install.sh, Running pre installation script]
 
 - link:
     ~/.dotfiles: ''
-    ~/.base16-builder:
-      force: true
-      path: base16-builder/
-    ~/.tmux.conf:
-      force: true
-      path: tmux.conf
-    ~/.vim:
-      force: true
-      path: vim/
-    ~/.vimrc:
-      force: true
-      path: vimrc
-    ~/.zshrc:
-      force: true
-      path: zshrc
-    ~/.zshrc_local_after:
-      force: create
-      path: zshrc_local_after
-    ~/.gitconfig:
-      force: true
-      path: gitconfig
-    ~/.gitconfig_local:
-      force: true
-      path: gitconfig_local
-    ~/.gitmessage:
-      force: true
-      path: gitmessage
-    ~/.gitignore_global:
-      force: true
-      path: gitignore_global
-    ~/.oh-my-zsh/custom/my-aliases.zsh:
-      force: true
-      path: oh-my-zsh/custom/my-aliases.zsh
-    ~/.oh-my-zsh/custom/plugins/brew:
-      force: true
-      path: oh-my-zsh/custom/plugins/brew/
-    ~/.oh-my-zsh/custom/plugins/youtube-dl:
-      force: true
-      path: oh-my-zsh/custom/plugins/youtube-dl/
-    ~/.oh-my-zsh/custom/plugins/zsh-completions:
-      force: true
-      path: oh-my-zsh/custom/plugins/zsh-completions/
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting:
-      force: true
-      path: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-    ~/.motd:
-      force: true
-      path: my_motd.sh
-    ~/Brewfile:
-      path: Brewfile
+    ~/.base16-builder: base16-builder/
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zshrc_local_after: zshrc_local_after
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig_local: gitconfig_local
+    ~/.gitmessage: gitmessage
+    ~/.gitignore_global: gitignore_global
+    ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
+    ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.motd: my_motd.sh
+    ~/Brewfile: Brewfile
 
 - shell:
   -
@@ -62,6 +34,10 @@
     description: Installing Homebrew from Brewfile
     stdin: true
     stdout: true
+  - [gem install jekyll, Installing Ruby Gems]
+  - [npm install -g yo, Installing Yeoman]
+  - [npm install -g bower, Installing Bower]
+  - [npm install -g grunt-cli, Installing GRUNT]
   -
     command: $HOME/.base16-builder/base16 -t terminal-app
     description: Building all base16 terminal app color
