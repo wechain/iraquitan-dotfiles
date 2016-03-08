@@ -53,8 +53,15 @@
     ~/.motd:
       force: true
       path: my_motd.sh
+    ~/Brewfile:
+      path: Brewfile
 
 - shell:
+  -
+    command: brew bundle install
+    description: Installing Homebrew from Brewfile
+    stdin: true
+    stdout: true
   -
     command: $HOME/.base16-builder/base16 -t terminal-app
     description: Building all base16 terminal app color
