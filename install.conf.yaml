@@ -1,9 +1,9 @@
 - defaults:
-  link:
-    create: true
-    relink: true
-  shell:
-    stderr: true
+    link:
+      create: true
+      relink: true
+    shell:
+      stderr: true
 
 - clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
 
@@ -13,34 +13,34 @@
   - [mkdir -p ~/.oh-my-zsh/custom/plugins, Creating oh-my-zsh custom plugins forlders]
   - [brew bundle install, Installing Homebrew formulas from Brewfile]
   - [if hash jekyll 2>/dev/null; then gem install jekyll; fi, Installing Jekyll]
-  - [if hash yo 2>/dev/null; then npm install yo; fi, Installing Yeoman]
-  - [if hash bower 2>/dev/null; then npm install bower; fi, Installing Bower]
-  - [if hash grunt 2>/dev/null; then npm install grunt-cli; fi, Installing GRUNT]
+  - [if hash yo 2>/dev/null; then npm install -g yo; fi, Installing Yeoman]
+  - [if hash bower 2>/dev/null; then npm install -g bower; fi, Installing Bower]
+  - [if hash grunt 2>/dev/null; then npm install -g grunt-cli; fi, Installing GRUNT]
 
 - link:
-  ~/.dotfiles: ''
-  ~/.base16-builder: base16-builder/
-  ~/.tmux.conf: tmux.conf
-  ~/.vim: vim/
-  ~/.zshrc: zshrc
-  ~/.zshrc_local_after: zshrc_local_after
-  ~/.gitconfig: gitconfig
-  ~/.gitconfig_local: gitconfig_local
-  ~/.gitmessage: gitmessage
-  ~/.gitignore_global: gitignore_global
-  ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
-  ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
-  ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
-  ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
-  ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-  ~/.motd: my_motd.sh
-  ~/Brewfile: Brewfile
+    ~/.dotfiles: ''
+    ~/.base16-builder: base16-builder/
+    ~/.tmux.conf: tmux.conf
+    ~/.vim: vim/
+    ~/.zshrc: zshrc
+    ~/.zshrc_local_after: zshrc_local_after
+    ~/.gitconfig: gitconfig
+    ~/.gitconfig_local: gitconfig_local
+    ~/.gitmessage: gitmessage
+    ~/.gitignore_global: gitignore_global
+    ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
+    ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
+    ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
+    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.motd: my_motd.sh
+    ~/Brewfile: Brewfile
 
 - shell:
   - [vim +PluginInstall +qall, Installing Vundle plugins]
 
 - link:
-  ~/.vimrc: vimrc
+    ~/.vimrc: vimrc
 
 - shell:
   - [$HOME/.base16-builder/base16 -t terminal-app, Building all base16 terminal app color]
