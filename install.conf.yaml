@@ -1,12 +1,16 @@
 - defaults:
     link:
-      create: true
-      relink: true
+        create: true
+        relink: true
+    shell:
+        stderr: true
 
-- clean: ['~', '~/.oh-my-zsh/custom/', '.oh-my-zsh/custom/plugins/']
+- clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
 
 - shell:
   - [sh pre-install.sh, Running pre installation script]
+  - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom forlders]
+  - [mkdir -p ~/.oh-my-zsh/custom/plugins, Creating oh-my-zsh custom plugins forlders]
 
 - link:
     ~/.dotfiles: ''
@@ -29,24 +33,11 @@
     ~/Brewfile: Brewfile
 
 - shell:
-  -
-    command: brew bundle install
-    description: Installing Homebrew from Brewfile
-    stdin: true
-    stdout: true
+  - [brew bundle install, Installing Homebrew from Brewfile]
   - [gem install jekyll, Installing Ruby Gems]
   - [npm install -g yo, Installing Yeoman]
   - [npm install -g bower, Installing Bower]
   - [npm install -g grunt-cli, Installing GRUNT]
-  -
-    command: $HOME/.base16-builder/base16 -t terminal-app
-    description: Building all base16 terminal app color
-    stdin: true
-    stdout: true
-    stderr: true
-  -
-    command: vim +PluginInstall +qall
-    description: Installing Vundle plugins
-    stdin: true
-    stdout: true
+  - [~/.base16-builder/base16 -t terminal-app, Building all base16 terminal app color]
+  - [vim +PluginInstall +qall, Installing Vundle plugins]
   - [git submodule update --init --recursive, Installing submodules]
