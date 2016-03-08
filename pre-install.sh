@@ -11,17 +11,7 @@ else
   echo 'Updating homebrew'
   brew update
 fi
-brew tap homebrew/bundle
-
-###### RUBY INSTALLS ######
-gem install jekyll  # Install Jekyll
-
-###### NODE INSTALLS ######
-npm install -g yo  # Install Yeoman
-npm install -g bower  # Install Bower
-npm install -g grunt-cli  # Install GRUNT
-npm install angular  # Install AngularJs
-npm install bootstrap  # Install Bootstrap
+brew tap homebrew/bundle  # Install Homebrew Bundle
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
