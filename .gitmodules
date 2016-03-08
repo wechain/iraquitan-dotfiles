@@ -1,6 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
-	url = https://github.com/anishathalye/dotbot
+	url = https://github.com/anishathalye/dotbot.git
 [submodule "oh-my-zsh/custom/plugins/zsh-completions"]
 	path = oh-my-zsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
