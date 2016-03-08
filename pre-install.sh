@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if Homebrew is installed
-if [hash brew 2>/dev/null ]; then
+if [! hash brew 2>/dev/null ]; then
   echo 'Installing homebrew'
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
