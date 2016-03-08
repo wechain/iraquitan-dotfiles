@@ -13,82 +13,35 @@ else
 fi
 
 ###### BREW INSTALLS ######
-# Check if Git is installed
-# which -s git || brew install git
-brew install git
+brew install git  # Install Git
+brew install git-secrets  # Install git-secrets
+brew install vim  # Install Vim
+brew install zsh  # Install Zsh
+brew install youtube-dl  # InstallYoutube-dl
+brew install cheat  # Install Cheat
+brew install python  # Install Python
+brew install python3  # Install Python3
+brew install app-engine-python  # Install Google App Engine Python SDK
+brew install heroku-toolbelt  # Install Heroku
+brew install node  # Install Node Js
+brew install tmux  # Install tmux
+brew install ctags  # Install exuberant Ctags
+brew install otto  # Install Otto by HashiCorp
+brew install vault  # Install Vault by HashiCorp
+brew install tree  # Install tree
+brew install keybase  # Install Keybase
+brew install gpg2  # Intall GnuPGP
+brew install ruby  # Install Ruby
 
-# Install git-secrets
-brew install git-secrets
-
-# Install homebrew vim
-brew install vim
-
-# Check if Zsh is installed
-which -s zsh || brew install zsh
-
-# Check if Youtube-dl is installed
-which -s youtube-dl || brew install youtube-dl
-
-# Check if Cheat is installed
-which -s cheat || brew install cheat
-
-# Install python
-brew install python
-
-# Install Google App Engine Python SDK
-brew install app-engine-python
-
-# Install Heroku
-brew install heroku-toolbelt
-
-# Install Node Js
-brew install node
-
-# Install tmux
-brew install tmux
-
-# Install exuberant Ctags
-brew install ctags
-
-# Install Otto by HashiCorp
-brew install otto
-
-# Install Vault by HashiCorp
-brew install vault
-
-# Install tree
-brew install tree
-
-# Install Keybase
-brew install keybase
-
-# Intall GnuPGP
-brew install gpg2
-
-# Install Watson for time tracking on projects
-brew install watson
-
-# Install Googler terminal search
-brew install googler
-
-# Install cliclick
-brew install cliclick
+###### RUBY INSTALLS ######
+gem install jekyll  # Install Jekyll
 
 ###### NODE INSTALLS ######
-# Install Yeoman
-npm install -g yo
-
-# Install Bower
-npm install -g bower
-
-# Install GRUNT
-npm install -g grunt-cli
-
-# Install AngularJs
-npm install angular
-
-# Install Bootstrap
-npm install bootstrap
+npm install -g yo  # Install Yeoman
+npm install -g bower  # Install Bower
+npm install -g grunt-cli  # Install GRUNT
+npm install angular  # Install AngularJs
+npm install bootstrap  # Install Bootstrap
 
 # Check if oh-my-zsh is installed
 OMZDIR="$HOME/.oh-my-zsh"
