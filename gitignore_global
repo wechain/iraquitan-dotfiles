@@ -29,6 +29,9 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
+# Ruby Gems
+Gemfile.lock
+
 ### OS generated files
 .DS_Store
 .DS_Store?
