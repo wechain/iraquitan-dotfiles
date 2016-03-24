@@ -1,5 +1,7 @@
 [alias]
         pullff = pull --ff-only
+        ignore = update-index --assume-unchanged
+        ignore-not = update-index --no-assume-unchanged
 
 [color]
         ui = auto
