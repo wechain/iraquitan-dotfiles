@@ -73,7 +73,7 @@ function git_unsetproxy() {
 }
 
 # Anaconda python
-# alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
+alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
 
 # Check what process is listening on port
 function whos_listening () {
