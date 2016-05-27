@@ -132,3 +132,13 @@ alias coffee='VALUE=$( cat ~/.cupsocoffee ) ; VALUE=$(( $VALUE + 1 )); echo $VAL
 
 # Unsecure http Google Chrome
 alias chrome-unsecure="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --user-data-dir=test --unsafely-treat-insecure-origin-as-secure=http://localhost:8080"
+
+# Base64 encode function
+function base64_enc() {
+    echo -n ${1} | base64
+}
+
+# Base64 decode function
+function base64_dec() {
+    echo -n ${1} | base64 -D
+}
