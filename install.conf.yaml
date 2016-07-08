@@ -12,6 +12,8 @@
   - [mkdir -p ~/.oh-my-zsh/custom/, Creating oh-my-zsh custom forlders]
   - [mkdir -p ~/.oh-my-zsh/custom/plugins, Creating oh-my-zsh custom plugins forlders]
   - [brew bundle install, Installing Homebrew formulas from Brewfile]
+  - [pip install virtualenv, Installing virtualen with pip]
+  - [pip install virtualenvwrapper, Installing virtualenvwrapper with pip]
   - [if ! hash bundle 2>/dev/null; then gem install bundler; fi, Installing Bundler]
   - [if ! hash jekyll 2>/dev/null; then gem install jekyll; fi, Installing Jekyll]
   - [if ! hash bourbon 2>/dev/null; then gem install bourbon; fi, Installing Bourbon]

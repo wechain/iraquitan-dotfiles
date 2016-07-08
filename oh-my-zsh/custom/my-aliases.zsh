@@ -41,9 +41,9 @@ alias h='history'
 alias hgrep="fc -El 0 | grep"
 
 # VirtualEnvWrapper env path
-export WORKON_HOME=~/PyEnvs
+export WORKON_HOME=~/.virtualenvs
 # Add VirtualEnvWrapper to path
-# source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Dock scroll gestures
 alias dockscroll_on='defaults write com.apple.dock scroll-to-open -bool TRUE; killall Dock'
