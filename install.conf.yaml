@@ -41,6 +41,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.motd: my_motd.sh
     ~/Brewfile: Brewfile
+    ~/.atom/packages.cson: packages.cson
 
 - shell:
   - [vim +PluginInstall +qall, Installing Vundle plugins]
