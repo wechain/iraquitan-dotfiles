@@ -16,4 +16,7 @@ packages: [
   "pigments"
   "seti-ui"
   "wakatime"
+  "file-icons"
+  "terminal-plus"
+  "chester-atom-syntax"
 ]
