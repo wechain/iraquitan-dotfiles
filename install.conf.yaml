@@ -15,10 +15,7 @@
   - [pip install virtualenv, Installing virtualen with pip]
   - [pip install virtualenvwrapper, Installing virtualenvwrapper with pip]
   - [if ! hash bundle 2>/dev/null; then gem install bundler; fi, Installing Bundler]
-  - [if ! hash jekyll 2>/dev/null; then gem install jekyll; fi, Installing Jekyll]
-  - [if ! hash bourbon 2>/dev/null; then gem install bourbon; fi, Installing Bourbon]
-  - [if ! hash neat 2>/dev/null; then gem install neat; fi, Installing Neat]
-  - [if ! hash bitters 2>/dev/null; then gem install bitters; fi, Installing Bitters]
+  - [bundle install --system, Installing system gems from Gemfile]
   - [if ! hash yo 2>/dev/null; then npm install -g yo; fi, Installing Yeoman]
   - [if ! hash bower 2>/dev/null; then npm install -g bower; fi, Installing Bower]
   - [if ! hash grunt 2>/dev/null; then npm install -g grunt-cli; fi, Installing GRUNT]
@@ -41,6 +38,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
     ~/.motd: my_motd.sh
     ~/Brewfile: Brewfile
+    ~/Gemfile: Gemfile
     ~/.atom/packages.cson: packages.cson
 
 - shell:
