@@ -142,3 +142,9 @@ function base64_enc() {
 function base64_dec() {
     echo -n ${1} | base64 -D
 }
+
+# Restore python env broken links homebrew
+function pyenv_restore() {
+    gfind ~/.virtualenvs/${1}/ -type l -xtype l -delete
+    virtualenv ~/.virtualenvs/${1}
+}
