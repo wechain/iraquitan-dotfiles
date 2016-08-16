@@ -19,6 +19,7 @@
   - [if ! hash yo 2>/dev/null; then npm install -g yo; fi, Installing Yeoman]
   - [if ! hash bower 2>/dev/null; then npm install -g bower; fi, Installing Bower]
   - [if ! hash grunt 2>/dev/null; then npm install -g grunt-cli; fi, Installing GRUNT]
+  - [if ! hash ncu 2>/dev/null; then npm install -g npm-check-updates, Installing npm=check-updates]
 
 - link:
     ~/.dotfiles: ''
