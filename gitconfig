@@ -1,43 +1,43 @@
 [alias]
-        pullff = pull --ff-only
-        ignore = update-index --assume-unchanged
-        ignore-not = update-index --no-assume-unchanged
+    pullff = pull --ff-only
+    ignore = update-index --assume-unchanged
+    ignore-not = update-index --no-assume-unchanged
 	graph = log --graph --oneline
 
 [color]
-        ui = auto
+    ui = auto
 
 [color "grep"]
-        match = cyan bold
-        selected = blue
-        context = normal
-        filename = magenta
-        linenumber = green
-        separator = yellow
-        function = blue
+    match = cyan bold
+    selected = blue
+    context = normal
+    filename = magenta
+    linenumber = green
+    separator = yellow
+    function = blue
 
 [pretty]
-        line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
-        compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
-        detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"
+    line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
+    compact = "%C(auto)%h %s %C(green)%ar%n %C(auto)%d%n"
+    detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ar%n %C(auto)%d%n"
 
 [grep]
-        lineNumber = true
+    lineNumber = true
 
 [push]
-        default = upstream
+    default = upstream
 
 [credential]
-        helper = osxkeychain
+    helper = osxkeychain
 
 [commit]
-        template = ~/.gitmessage
+    template = ~/.gitmessage
 
 # Allow local customizations in the .gitconfig_local file
 [include]
-        path = ~/.gitconfig_local
+    path = ~/.gitconfig_local
 
 [core]
-        excludesfile = ~/.gitignore_global
-        autocrlf = input
-        editor = vim
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+    editor = vim
