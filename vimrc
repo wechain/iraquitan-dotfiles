@@ -32,6 +32,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'chrisbra/csv.vim'
 Plugin 'junegunn/vim-emoji'
 Plugin 'majutsushi/tagbar'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'ternjs/tern_for_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -123,6 +127,8 @@ else
 	autocmd FileType python map <buffer> <F5> :!python %<CR>
 endif
 
+autocmd FileType javascript map <buffer> <F5> :!node %<CR>
+
 " <F6> new tab
 map <F6> <Esc>:tabnew<CR>
 
@@ -184,3 +190,6 @@ let g:jedi#completions_command = "<C-Space>"
 let g:flake8_show_in_file = 1
 let g:flake8_show_in_gutter = 1
 autocmd! BufRead,BufWritePost *.py call Flake8()
+
+" Omni completion
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
