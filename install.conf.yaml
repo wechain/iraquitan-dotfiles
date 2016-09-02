@@ -21,6 +21,7 @@
   - [if ! hash grunt 2>/dev/null; then npm install -g grunt-cli; fi, Installing GRUNT]
   - [if ! hash gulp 2>/dev/null; then npm install -g gulp-cli; fi, Installing Gulp]
   - [if ! hash browser-sync 2>/dev/null; then npm install -g browser-sync; fi, Installing Browsersync]
+  - [if ! hash eslint 2>/dev/null; then npm install -g eslint; fi, Installing ESLint]
   - [if ! hash ncu 2>/dev/null; then npm install -g npm-check-updates; fi, Installing npm-check-updates]
 
 - link:
