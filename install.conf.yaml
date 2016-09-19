@@ -23,7 +23,7 @@
   - [if ! hash browser-sync 2>/dev/null; then npm install -g browser-sync; fi, Installing Browsersync]
   - [if ! hash eslint 2>/dev/null; then npm install -g eslint; fi, Installing ESLint]
   - [if ! hash ncu 2>/dev/null; then npm install -g npm-check-updates; fi, Installing npm-check-updates]
-  - [if ! hash firabase 2>/dev/null; then npm install -g firabase-tools; fi, Installing Firebase CLI]
+  - [if ! hash firebase 2>/dev/null; then npm install -g firebase-tools; fi, Installing Firebase CLI]
 
 - link:
     ~/.dotfiles: ''
