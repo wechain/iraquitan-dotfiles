@@ -58,7 +58,7 @@ filetype plugin indent on    " required
 set number
 syntax enable
 set background=dark
-colorscheme base16-ocean
+:silent! colorscheme base16-ocean
 
 " backspace available
 set backspace=2
