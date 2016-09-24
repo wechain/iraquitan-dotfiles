@@ -85,7 +85,7 @@ alias vagrant_shutdown_all='vagrant global-status | grep virtualbox | cut -c 1-9
 alias gitignored='git ls-files --other --ignored --exclude-standard'
 
 # Set a blazingly fast keyboard repeat rate
-alias set_bf_kb='defaults write NSGlobalDomain KeyRepeat -int 0.02
+alias set_bf_kb='defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 12'
 
 # Set keyboard settings to default
