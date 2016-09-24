@@ -31,7 +31,9 @@
     ~/.base16-builder: base16-builder/
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
     ~/.zshrc_local_after: zshrc_local_after
     ~/.gitconfig: gitconfig
     ~/.gitconfig_local: gitconfig_local
