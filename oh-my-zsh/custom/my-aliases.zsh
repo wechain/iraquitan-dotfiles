@@ -75,6 +75,9 @@ function git_unsetproxy() {
 # Anaconda python
 alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
 
+# Add MacTeX to path
+alias mactex_path='export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin'
+
 # Check what process is listening on port
 function whos_listening () {
 	lsof -n -i4TCP:$1 | grep LISTEN
