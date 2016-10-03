@@ -1,2 +1,2 @@
 # Custom plugins for Homebrew
-alias bu='brew update && brew upgrade --all && brew cleanup'
+alias bu='brew update && brew upgrade && brew cleanup'
