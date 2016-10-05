@@ -47,5 +47,4 @@ mas 'Affinity Designer', id: 824171161
 mas 'Magnet', id: 441258766
 mas '1Password', id: 443987910
 mas 'Keka', id: 470158793
-mas 'Dash', id: 449589707
 mas 'PopClip', id: 445189367
