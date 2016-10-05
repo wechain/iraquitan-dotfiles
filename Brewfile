@@ -42,6 +42,7 @@ brew 'peco'
 brew 'doxygen'
 cask 'flux'
 cask 'dash'
+cask 'keyboard-cleaner'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
