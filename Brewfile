@@ -26,7 +26,7 @@ brew 'tmux'
 brew 'tree'
 brew 'vault'
 brew 'vim'
-brew 'macvim'
+brew 'macvim', args: ['with-override-system-vim']
 brew 'youtube-dl'
 brew 'zsh'
 brew 'ruby'
