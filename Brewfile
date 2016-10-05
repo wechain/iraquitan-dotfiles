@@ -41,3 +41,11 @@ brew 'pyenv'
 brew 'peco'
 brew 'doxygen'
 cask 'flux'
+mas 'Affinity Photo', id: 824183456
+mas 'Xcode', id: 497799835
+mas 'Affinity Designer', id: 824171161
+mas 'Magnet', id: 441258766
+mas '1Password', id: 443987910
+mas 'Keka', id: 470158793
+mas 'Dash', id: 449589707
+mas 'PopClip', id: 445189367
