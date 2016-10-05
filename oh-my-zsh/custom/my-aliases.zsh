@@ -154,3 +154,8 @@ function pyenv_restore() {
     gfind ~/.virtualenvs/${1}/ -type l -xtype l -delete
     virtualenv ~/.virtualenvs/${1}
 }
+
+if [ -f "`which mvim`" ]; then
+    alias vim="mvim -v"
+fi
+
