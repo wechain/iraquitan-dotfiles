@@ -50,3 +50,4 @@ mas 'Magnet', id: 441258766
 mas '1Password', id: 443987910
 mas 'Keka', id: 470158793
 mas 'PopClip', id: 445189367
+mas 'Slack', id: 803453959
