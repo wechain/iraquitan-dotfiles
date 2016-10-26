@@ -40,6 +40,7 @@ brew 'findutils'
 brew 'pyenv'
 brew 'peco'
 brew 'doxygen'
+brew 'yarn'
 cask 'flux'
 cask 'dash'
 cask 'keyboard-cleaner'
@@ -51,3 +52,4 @@ mas '1Password', id: 443987910
 mas 'Keka', id: 470158793
 mas 'PopClip', id: 445189367
 mas 'Slack', id: 803453959
+mas 'Sip', id: 507257563
