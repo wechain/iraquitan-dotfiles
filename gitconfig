@@ -3,6 +3,9 @@
     ignore = update-index --assume-unchanged
     ignore-not = update-index --no-assume-unchanged
 	graph = log --graph --oneline
+    tree = log --oneline --decorate --graph
+    ls = log --graph --pretty='%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%cn]' --abbrev-commit --date=short
+    authors = shortlog -s -n -e
 
 [color]
     ui = auto
@@ -41,6 +44,7 @@
     excludesfile = ~/.gitignore_global
     autocrlf = input
     editor = vim
+    pager = diff-so-fancy | less --tabs=4 -RFX
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
