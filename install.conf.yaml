@@ -44,6 +44,7 @@
     ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
     ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme: oh-my-zsh/custom/themes/bullet-train/bullet-train.zsh-theme
     ~/.motd: my_motd.sh
     ~/Brewfile: Brewfile
     ~/Gemfile: Gemfile
