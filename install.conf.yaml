@@ -28,7 +28,6 @@
 - link:
     ~/.dotfiles: ''
     ~/.base16-builder: base16-builder/
-    ~/.powerline-fonts: fonts/
     ~/.tmux.conf: tmux.conf
     ~/.vim: vim/
     ~/.zshrc:
@@ -58,5 +57,5 @@
 
 - shell:
   - [$HOME/.base16-builder/base16 -t terminal-app, Building all base16 terminal app color]
-  - [sh $HOME/.powerline-fonts/install.sh, Installing Powerline fonts]
+  - [sh fonts/install.sh, Installing Powerline fonts]
   - [git submodule update --init --recursive, Installing submodules]
