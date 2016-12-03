@@ -49,6 +49,7 @@ brew 'httpie'
 brew 'jsonlint'
 cask 'flux'
 cask 'dash'
+cask 'virtualbox'
 cask 'keyboard-cleaner'
 cask 'imageoptim'
 mas 'Affinity Photo', id: 824183456
