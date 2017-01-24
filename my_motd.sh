@@ -1,1 +1,2 @@
-neofetch
+clear
+neofetch --shell_version off
