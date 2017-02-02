@@ -173,8 +173,14 @@ let g:syntastic_check_on_wq = 0
 " Emoji
 set completefunc=emoji#complete
 
-" NerdCommenter
+" NERD Commenter
+" NERD Commenter -- Add spaces after comment delimiters by default
 let g:NERDSpaceDelims=1
+" NERD Commenter -- Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" NERD Commenter -- Align line-wise comment delimiters flush left instead
+" of following code indentation
+let g:NERDDefaultAlign = 'left'
 
 " Nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$']

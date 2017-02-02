@@ -40,11 +40,6 @@ alias ff='find . -type f -name'
 alias h='history'
 alias hgrep="fc -El 0 | grep"
 
-# VirtualEnvWrapper env path
-export WORKON_HOME=~/.virtualenvs
-# Add VirtualEnvWrapper to path
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Dock scroll gestures
 alias dockscroll_on='defaults write com.apple.dock scroll-to-open -bool TRUE; killall Dock'
 alias dockscroll_off='defaults write com.apple.dock scroll-to-open -bool FALSE; killall Dock'
@@ -149,13 +144,10 @@ function base64_dec() {
     echo -n ${1} | base64 -D
 }
 
-# Restore python env broken links homebrew
-function pyenv_restore() {
-    gfind ~/.virtualenvs/${1}/ -type l -xtype l -delete
-    virtualenv ~/.virtualenvs/${1}
-}
-
+# Alias vim to mvim
 if [ -f "`which mvim`" ]; then
     alias vim="mvim -v"
 fi
 
+# Update Vim plugins
+alias vim-plugin-update="vim +PluginUpdate +qall"

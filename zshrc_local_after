@@ -5,4 +5,14 @@ autoload -U compinit && compinit
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Go setup
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
+# pyenv setup
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# pyenv-virtualenv auto activation
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 bash $HOME/.motd
