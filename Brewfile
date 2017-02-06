@@ -69,6 +69,10 @@ cask 'imageoptim'
 cask 'hyper'
 cask 'font-roboto-mono-for-powerline'
 cask 'font-fira-mono-for-powerline'
+cask 'font-fira-code'
+cask 'font-anonymous-pro'
+cask 'font-ubuntu-mono-derivative-powerline'
+cask 'font-source-code-pro-for-powerline'
 cask 'malwarebytes-anti-malware'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
