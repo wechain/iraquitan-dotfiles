@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'homebrew/bundle'
 tap 'homebrew/versions'
 brew 'app-engine-python'
@@ -66,6 +67,8 @@ cask 'virtualbox'
 cask 'keyboard-cleaner'
 cask 'imageoptim'
 cask 'hyper'
+cask 'font-roboto-mono-for-powerline'
+cask 'font-fira-mono-for-powerline'
 cask 'malwarebytes-anti-malware'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
