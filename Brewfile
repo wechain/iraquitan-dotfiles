@@ -74,6 +74,7 @@ cask 'font-anonymous-pro'
 cask 'font-ubuntu-mono-derivative-powerline'
 cask 'font-source-code-pro-for-powerline'
 cask 'malwarebytes-anti-malware'
+cask 'sip'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
@@ -82,5 +83,4 @@ mas '1Password', id: 443987910
 mas 'Keka', id: 470158793
 mas 'PopClip', id: 445189367
 mas 'Slack', id: 803453959
-mas 'Sip', id: 507257563
 mas 'Spark', id: 1176895641
