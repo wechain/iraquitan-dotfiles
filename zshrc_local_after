@@ -24,5 +24,10 @@ bindkey -s "\C-r" "\eqhh\n"     # bind hh to Ctrl-r (for Vi mode check doc)
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# CUDA development environment setup
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+
 bash $HOME/.motd
 
