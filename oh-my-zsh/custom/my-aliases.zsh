@@ -67,9 +67,6 @@ function git_unsetproxy() {
 	git config --global --unset https.proxy
 }
 
-# Anaconda python
-alias conda_python='export PATH="$HOME/anaconda/bin:$PATH"'
-
 # Add MacTeX to path
 alias mactex_path='export PATH=$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin'
 
