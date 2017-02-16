@@ -17,7 +17,6 @@ brew 'git-secrets'
 brew 'gnupg2'
 brew 'heroku'
 brew 'hub'
-brew 'keybase'
 brew 'kommit'
 brew 'lua'
 brew 'luajit'
@@ -76,6 +75,7 @@ cask 'font-ubuntu-mono-derivative-powerline'
 cask 'font-source-code-pro-for-powerline'
 cask 'malwarebytes-anti-malware'
 cask 'sip'
+cask 'keybase'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
