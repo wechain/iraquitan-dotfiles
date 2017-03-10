@@ -60,6 +60,7 @@ brew 'docker-machine-completion'
 brew 'pip-completion'
 brew 'hh'
 brew 'git-recent'
+brew 'doitlive'
 cask 'atom'
 cask 'flux'
 cask 'dash'
@@ -76,6 +77,7 @@ cask 'font-source-code-pro-for-powerline'
 cask 'malwarebytes-anti-malware'
 cask 'sip'
 cask 'keybase'
+cask 'visual-studio-code'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
