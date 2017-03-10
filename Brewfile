@@ -87,3 +87,4 @@ mas 'Keka', id: 470158793
 mas 'PopClip', id: 445189367
 mas 'Slack', id: 803453959
 mas 'Spark', id: 1176895641
+mas 'ForkLift - File Manager and FTP/SFTP/WebDAV/Amazon S3 client', id: 412448059
