@@ -13,6 +13,7 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="bureau"
 # ZSH_THEME="dieter"
 ZSH_THEME="dogenpunk"
+# ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,3 +95,5 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zshrc_local_after ]; then
     source ~/.zshrc_local_after
 fi
+
+eval $(thefuck --alias)
