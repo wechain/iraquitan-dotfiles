@@ -13,6 +13,9 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="bureau"
 # ZSH_THEME="dieter"
 ZSH_THEME="dogenpunk"
+# ZSH_THEME="agnoster"
+# ZSH_THEME="norm"
+# ZSH_THEME="sunrise"
 # ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
