@@ -148,3 +148,6 @@ fi
 
 # Update Vim plugins
 alias vim-plugin-update="vim +PluginUpdate +qall"
+
+alias conda_activate='export PATH="$HOME/anaconda/bin:$PATH"'
+
