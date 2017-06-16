@@ -25,9 +25,17 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # CUDA development environment setup
+# export CUDA_HOME=/usr/local/cuda
+# export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+# export PATH="$CUDA_HOME/bin:$PATH"
+
 export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
-export PATH="$CUDA_HOME/bin:$PATH"
+export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+export PATH=$DYLD_LIBRARY_PATH:$PATH
+
+# Nix setup
+source $HOME/.nix-profile/etc/profile.d/nix.sh
 
 bash $HOME/.motd
 
