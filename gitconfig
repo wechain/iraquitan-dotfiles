@@ -8,7 +8,7 @@
     authors = shortlog -s -n -e
 
 [color]
-    ui = auto
+	ui = true
 
 [color "grep"]
     match = cyan bold
@@ -18,6 +18,20 @@
     linenumber = green
     separator = yellow
     function = blue
+
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+
+[color "diff"]
+	meta = 227
+	frag = magenta bold
+	commit = 227 bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
 
 [pretty]
     line = "%C(auto)%h%d %s %C(yellow)by %C(blue)%an %C(green)%ar"
@@ -45,6 +59,7 @@
     autocrlf = input
     editor = vim
     pager = diff-so-fancy | less --tabs=4 -RFX
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
