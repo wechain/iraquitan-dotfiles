@@ -69,6 +69,7 @@ brew 'osquery'
 brew 'fsql'
 brew 'graphviz'
 brew 'zsh-completions'
+brew 'nnn'
 cask 'atom'
 cask 'dash'
 cask 'virtualbox'
@@ -86,6 +87,7 @@ cask 'malwarebytes-anti-malware'
 cask 'sip'
 cask 'keybase'
 cask 'visual-studio-code'
+cask 'vanilla'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
