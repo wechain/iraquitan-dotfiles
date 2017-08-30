@@ -37,5 +37,8 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 # Nix setup
 source $HOME/.nix-profile/etc/profile.d/nix.sh
 
+# Thefuck setup
+eval "$(thefuck --alias)"
+
 bash $HOME/.motd
 

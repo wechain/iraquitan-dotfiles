@@ -88,6 +88,7 @@ cask 'sip'
 cask 'keybase'
 cask 'visual-studio-code'
 cask 'vanilla'
+cask 'electrum'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
