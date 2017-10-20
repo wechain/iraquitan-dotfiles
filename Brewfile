@@ -88,8 +88,9 @@ cask 'sip'
 cask 'keybase'
 cask 'visual-studio-code'
 cask 'vanilla'
-cask 'electrum'
 cask 'skype'
+cask 'kap'
+>>>>>>> a3a107bee971762429af198bb942f8287d1a090b
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
