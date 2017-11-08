@@ -70,6 +70,7 @@ brew 'fsql'
 brew 'graphviz'
 brew 'zsh-completions'
 brew 'nnn'
+brew 'pipenv'
 cask 'atom'
 cask 'dash'
 cask 'virtualbox'
@@ -90,7 +91,7 @@ cask 'visual-studio-code'
 cask 'vanilla'
 cask 'skype'
 cask 'kap'
->>>>>>> a3a107bee971762429af198bb942f8287d1a090b
+cask 'devdocs'
 mas 'Affinity Photo', id: 824183456
 mas 'Xcode', id: 497799835
 mas 'Affinity Designer', id: 824171161
