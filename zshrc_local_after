@@ -38,9 +38,6 @@ export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
 export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
 export PATH=$DYLD_LIBRARY_PATH:$PATH
 
-# Nix setup
-source $HOME/.nix-profile/etc/profile.d/nix.sh
-
 # Thefuck setup
 eval "$(thefuck --alias)"
 
