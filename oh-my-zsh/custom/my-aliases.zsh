@@ -151,3 +151,11 @@ alias vim-plugin-update="vim +PluginUpdate +qall"
 
 alias conda_activate='export PATH="$HOME/anaconda/bin:$PATH"'
 
+function count_files() {
+    if [ "$1" ]
+    then
+        find . -type f -name "${1}" | wc -l
+    else
+        find . -type f | wc -l
+    fi
+}
