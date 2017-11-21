@@ -159,3 +159,8 @@ function count_files() {
         find . -type f | wc -l
     fi
 }
+
+function debug_zsh() {
+    zsh -xv 2>&1 | ts -i "%.s" > $HOME/zsh_startup.log
+}
+
