@@ -57,8 +57,12 @@ filetype plugin indent on    " required
 " color theme setup
 set number
 syntax enable
-set background=dark
-:silent! colorscheme base16-ocean
+highlight LineNr term=bold cterm=NONE ctermfg=LightGray ctermbg=DarkGray gui=NONE guifg=LightGray guibg=DarkGray
+" set background=dark
+" let base16colorspace=256  " Access colors present in 256 colorspace
+" :silent! colorscheme base16-ocean
+" :silent! colorscheme base16-3024
+" :silent! colorscheme base16-default-dark
 
 " backspace available
 set backspace=2
