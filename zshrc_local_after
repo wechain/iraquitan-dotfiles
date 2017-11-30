@@ -42,4 +42,3 @@ export PATH=$DYLD_LIBRARY_PATH:$PATH
 eval "$(thefuck --alias)"
 
 bash $HOME/.motd
-

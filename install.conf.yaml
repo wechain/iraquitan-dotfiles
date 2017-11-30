@@ -5,7 +5,8 @@
     shell:
       stderr: true
 
-- clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
+# - clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins/']
+- clean: ['~']
 
 - shell:
   - [sh pre-install.sh, Running pre installation script]
@@ -36,12 +37,12 @@
     ~/.gitconfig_local: gitconfig_local
     ~/.gitmessage: gitmessage
     ~/.gitignore_global: gitignore_global
-    ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
-    ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
-    ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
-    ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
-    ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme: oh-my-zsh/custom/themes/bullet-train/bullet-train.zsh-theme
+    # ~/.oh-my-zsh/custom/my-aliases.zsh: oh-my-zsh/custom/my-aliases.zsh
+    # ~/.oh-my-zsh/custom/plugins/brew: oh-my-zsh/custom/plugins/brew/
+    # ~/.oh-my-zsh/custom/plugins/youtube-dl: oh-my-zsh/custom/plugins/youtube-dl/
+    # ~/.oh-my-zsh/custom/plugins/zsh-completions: oh-my-zsh/custom/plugins/zsh-completions/
+    # ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting/
+    # ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme: oh-my-zsh/custom/themes/bullet-train/bullet-train.zsh-theme
     ~/.motd: my_motd.sh
     ~/Brewfile: Brewfile
     ~/Gemfile: Gemfile

@@ -10,24 +10,34 @@ else
 fi
 brew tap homebrew/bundle  # Install Homebrew Bundle
 
-# Check if oh-my-zsh is installed
-OMZDIR="$HOME/.oh-my-zsh"
-if [ ! -d "$OMZDIR" ]; then
-  echo 'Installing oh-my-zsh'
-  /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# # Check if oh-my-zsh is installed
+# OMZDIR="$HOME/.oh-my-zsh"
+# if [ ! -d "$OMZDIR" ]; then
+#   echo 'Installing oh-my-zsh'
+#   /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# else
+#   echo 'Updating oh-my-zsh'
+#   upgrade_oh_my_zsh
+# fi
+
+# Check if zplug is installed
+ZPLUGDIR="$HOME/.zplug"
+if [ ! -d "$ZPLUGDIR" ]; then
+  echo 'Installing zplug'
+  /bin/sh -c "$(curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh)"
 else
-  echo 'Updating oh-my-zsh'
-  upgrade_oh_my_zsh
+  echo 'Updating zplug'
+  zplug update
 fi
 
-# Check if Mac-CLI is installed
-if [ ! -f "which mac" ]; then
-    echo 'Installing Mac-CLI'
-    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
-else
-    echo 'Updating Mac-CLI'
-    /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/update)"
-fi
+# # Check if Mac-CLI is installed
+# if [ ! -f "which mac" ]; then
+#     echo 'Installing Mac-CLI'
+#     /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/install)"
+# else
+#     echo 'Updating Mac-CLI'
+#     /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/guarinogabriel/mac-cli/master/mac-cli/tools/update)"
+# fi
 
 # Change default shell
 if [! $0 = "-zsh"]; then
