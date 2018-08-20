@@ -149,7 +149,13 @@ fi
 # Update Vim plugins
 alias vim-plugin-update="vim +PluginUpdate +qall"
 
-alias conda_activate='export PATH="$HOME/anaconda/bin:$PATH"'
+alias conda_activate='export PATH="$HOME/voohierra/bin:$PATH"'
+
+# Docker
+
+# Mine
+alias c="code -w"
+alias a="atom"
 
 function count_files() {
     if [ "$1" ]

@@ -15,6 +15,10 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # pyenv-virtualenv auto activation
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
+
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
 # add this configuration to ~/.zshrc
 export HISTFILE=~/.zsh_history  # ensure history file visibility
 export HH_CONFIG=hicolor        # get more colors
@@ -33,10 +37,17 @@ export LDFLAGS="$LDFLAGS -L$(brew --prefix openssl)/lib"
 # export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 # export PATH="$CUDA_HOME/bin:$PATH"
 
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
-export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
-export PATH=$DYLD_LIBRARY_PATH:$PATH
+#export CUDA_HOME=/usr/local/cuda
+#export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:/usr/local/cuda/extras/CUPTI/lib
+#export LD_LIBRARY_PATH=$DYLD_LIBRARY_PATH
+#export PATH=$DYLD_LIBRARY_PATH:$PATH
+
+
+export HOMEBREW_GITHUB_API_TOKEN=25d76ec8f112433483760219355036363096361e
+export AWS_ACCESS_KEY_ID=AKIAI4EUSECLUXZ5QEDQ
+export AWS_SECRET_ACCESS_KEY=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
+
+#export VULTR_API_KEY=JJGKRFGU5EU7LZMNTKYDTHJ62JGQT667UWBQ
 
 # Thefuck setup
 eval "$(thefuck --alias)"

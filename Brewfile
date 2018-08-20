@@ -1,7 +1,17 @@
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
 tap 'homebrew/bundle'
-tap 'homebrew/versions'
+
+tap 'homebrew/core'
+tap 'homebrew/livecheck'
+tap 'homebrew/services'
+tap 'heroku/brew'
+
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-fonts'
+
+cask "java"
+
+brew "ack"
 brew 'app-engine-python'
 brew 'git'
 brew 'git-lfs'
@@ -21,8 +31,7 @@ brew 'kommit'
 brew 'lua'
 brew 'luajit'
 brew 'mongodb'
-brew 'node'
-brew 'python3'
+brew 'nvm'
 brew 'speedtest_cli'
 brew 'tmux'
 brew 'tree'
@@ -73,34 +82,71 @@ brew 'nnn'
 brew 'pipenv'
 brew 'vips'
 brew 'moreutils'
-cask 'atom'
-cask 'dash'
-cask 'virtualbox'
-cask 'keyboard-cleaner'
-cask 'imageoptim'
-cask 'hyper'
+
+
+cask "alfred"
+cask "appcleaner"
+cask "atom"
+cask "cakebrew"
+cask "dash"
+cask "devdocs"
+cask "docker"
+cask "dropbox"
+cask "electrum"
+cask "firefox-beta"
+cask "font-anonymous-pro"
+cask "font-fira-code"
+cask "font-fira-mono-for-powerline"
+cask "font-roboto-mono-for-powerline"
+cask "font-source-code-pro-for-powerline"
+cask "font-ubuntu-mono-derivative-powerline"
+cask "gimp"
+cask "github"
+cask "google-backup-and-sync"
+cask "google-chrome-beta"
+cask "highsierramediakeyenabler"
+cask "hyper"
+cask "imageoptim"
+cask "iterm2-beta"
+cask "kap"
+cask "keybase"
+cask "launchrocket"
+cask 'malwarebytes'
 cask 'mendeley-desktop'
-cask 'font-roboto-mono-for-powerline'
-cask 'font-fira-mono-for-powerline'
-cask 'font-fira-code'
-cask 'font-anonymous-pro'
-cask 'font-ubuntu-mono-derivative-powerline'
-cask 'font-source-code-pro-for-powerline'
-cask 'malwarebytes-anti-malware'
-cask 'sip'
-cask 'keybase'
-cask 'visual-studio-code'
-cask 'vanilla'
-cask 'skype'
-cask 'kap'
-cask 'devdocs'
-mas 'Affinity Photo', id: 824183456
-mas 'Xcode', id: 497799835
-mas 'Affinity Designer', id: 824171161
-mas 'Magnet', id: 441258766
+cask "postico"
+cask "postman"
+cask "robo-3t"
+cask "sequel-pro"
+cask "sip"
+cask "spectacle"
+cask "spotify"
+cask "sublime-text"
+cask "the-unarchiver"
+cask "transmission"
+cask "tunnelblick"
+cask "twitter"
+cask "vanilla"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
+cask "viscosity"
+cask "visual-studio-code"
+cask "vlc-nightly"
+
 mas '1Password', id: 443987910
-mas 'Keka', id: 470158793
-mas 'PopClip', id: 445189367
+mas "Amphetamine", id: 937984704
+mas "Download Shuttle", id: 847809913
+mas "Evernote", id: 406056744
+mas 'ForkLift - File Manager and FTP/SFTP/WebDAV/Amazon S3 client', id: 412448059
+mas "GIPHY CAPTURE", id: 668208984
+mas "Hotspot Shield", id: 771076721
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Node", id: 438924363
+mas "Numbers", id: 409203825
 mas 'Slack', id: 803453959
 mas 'Spark', id: 1176895641
-mas 'ForkLift - File Manager and FTP/SFTP/WebDAV/Amazon S3 client', id: 412448059
+mas "Telegram Desktop", id: 946399090
+mas "Turn Off the Lights for Safari", id: 1273998507
+mas "WeChat", id: 836500024
+mas "WhatsApp", id: 1147396723
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
