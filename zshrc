@@ -100,3 +100,6 @@ if [ -f ~/.zshrc_local_after ]; then
 fi
 
 eval $(thefuck --alias)
+
+# added by travis gem
+[ -f /Users/voohierra/.travis/travis.sh ] && source /Users/voohierra/.travis/travis.sh
