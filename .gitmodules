@@ -19,3 +19,6 @@
 [submodule "oh-my-zsh/custom/themes/bullet-train"]
 	path = oh-my-zsh/custom/themes/bullet-train
 	url = https://github.com/caiogondim/bullet-train-oh-my-zsh-theme.git
+[submodule "Mac-CLI"]
+	path = Mac-CLI
+	url = https://github.com/guarinogabriel/Mac-CLI
