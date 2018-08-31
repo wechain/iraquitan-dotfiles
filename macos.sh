@@ -152,7 +152,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # SSD-specific tweaks                                                         #
 ###############################################################################
 
-sudo tmutil disablelocal
+sudo tmutil disable local
 
 sudo pmset -a hibernatemode 0
 
